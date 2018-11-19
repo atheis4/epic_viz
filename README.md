@@ -1,10 +1,8 @@
 # epic_viz
-===============================================================================
 A Django powered web app to track inputs to the Epi(demiology) Computation process at IHME.
 
 
-**ABOUT**
-===============================================================================
+# ABOUT
 Epic Viz provides a web app interface for viewing the status of the model versions for every input modelable entity to the Epi Computation pipeline.
 
 Hosted on an internal Rancher server and containerized with Docker, the web app allows researchers and disease modelers to quickly view whether their models are up to date, or can be rerun with new input data.
