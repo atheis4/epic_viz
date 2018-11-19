@@ -1,0 +1,15 @@
+# docker-compose for rancher site
+
+web:
+   image: docker-registry.ihme.washington.edu/centralcomp/epic_viz:latest
+   environment:
+     - EPIC_VIZ_KEY=${EPIC_VIZ_KEY}
+     - DB_USER=${DB_USER}
+     - DB_PASS=${DB_PASS}
+     - VIEW_USER=${VIEW_USER}
+     - VIEW_PASS=${VIEW_PASS}
+   working_dir: /epic_viz
+   command: python manage.py runserver 0.0.0.0:8000
+   ports:
+     - 8800:8000
+   restart: always

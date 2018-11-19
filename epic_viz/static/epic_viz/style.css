@@ -1,0 +1,190 @@
+html {
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  font-size: 16px;
+  margin: 0 auto;
+  background-color: rgba(200, 200, 200, .1);
+}
+
+
+/*====================
+  Base Layout Styles
+=====================*/
+
+.wrap {
+  min-height: calc(100vh + 240px);
+}
+
+ul {
+  list-style: none;
+  width: 460px;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/*====================
+  Header Styles
+=====================*/
+
+.head-div {
+  background-color: rgba(43, 43, 109, 1);
+  width: 100%;
+  display: flex;
+  border-bottom: 5px solid white;
+}
+
+.title {
+  text-align: right;
+  flex: 1;
+  margin-right: 15%;
+}
+
+.title-link {
+  color: white;
+}
+
+.title-link:hover {
+  text-decoration: none;
+  color: lightblue;
+}
+
+.tag-div {
+  flex: 2;
+  margin-left: 15%;
+  padding: 20px 0;
+}
+
+.btn {
+  width: 125px;
+}
+
+.scrollable-menu {
+  height: 500px;
+  overflow-x: hidden;
+}
+
+#color-key {
+  display: flex;
+  flex-direction: row;
+}
+
+.legend-tile {
+  display: flex;
+  flex-direction: row;
+}
+
+.color-tile {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-left: 10px;
+}
+
+.text-tile {
+  display: inline-block;
+  padding: 0px 10px 0 5px;
+}
+
+
+/*====================
+  Tag Styles
+=====================*/
+
+.input-div {
+  padding: 10px 20px;
+}
+
+.gbd-date {
+  margin: 25px 0px;
+}
+
+
+/*====================
+  ME Styles
+=====================*/
+
+.models {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.ind-model {
+  width: 40%;
+  margin: auto;
+  position: relative;
+}
+
+.metadata {
+  display: none;
+  position: absolute;
+  background: #fff;
+
+  width: 300px;
+  margin: auto;
+  margin-left: 25px;
+
+  box-shadow: 3px 3px 3px 2px rgba(0,0,0,0.5);
+  padding: 25px;
+  z-index: 1000;
+}
+
+.me-tile {
+  padding: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: block;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+}
+
+.green {
+  background-color: rgba(122, 219, 120, 0.75);
+}
+
+.yellow {
+  background-color: rgba(230, 237, 99, 0.75);
+}
+
+.orange {
+  background-color: rgba(240, 168, 34, 0.75);
+}
+
+.red {
+  background: rgba(219, 104, 92, 0.75);
+}
+
+.gray {
+  background: rgba(160, 160, 160, 0.75);
+}
+
+h4 {
+  width: auto;
+}
+
+
+@media(max-width: 768px) {
+  .models {
+    flex-direction: column;
+  }
+
+  .ind-model {
+    width: 70%;
+  }
+
+  .metadata {
+    left: 5%;
+  }
+
+  #color-key {
+    flex-direction: column;
+  }
+
+  .legend-tile {
+    display: flex;
+  }
+}

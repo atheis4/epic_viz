@@ -1,0 +1,4 @@
+web:
+  scale: 3
+backend-lb:
+  load_balancer_config: {}
